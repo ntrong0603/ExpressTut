@@ -1,8 +1,70 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font: 14px Arial, "Lucida Grande", Helvetica,  sans-serif;
+}
+#header{
+  background-color: #434343;
+  color: #fff;
+  padding: 16px 0px;
+}
+#header-help ul{
+  margin: 0;
+}
+#header-help>ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+#header-help>ul li{
+  list-style: none;
+}
+#header-help>ul>li{
+  position: relative;
+  padding:0 13px;
+}
+#header-help>ul>li:not(:first-child){
+  border-left: #e1e1e1 solid 1px;
+}
+#header-help>ul>li:first-child{
+  padding-left: 0;
+}
+#header-help>ul>li:last-child{
+  padding-right: 0;
+}
+#header-help>ul li>ul{
+  position: absolute;
+  top: 105%;
+  left: 0px;
+  display: none;
+  width: max-content;
+  width: -moz-max-content;
+  max-width: 150px;
+  background-color: #434343;
+  min-width: 100px;
+  padding: 0px;
+  border-top: #e1e1e1 solid 1px;
+}
+#header-help>ul li:hover>ul{
+  display: block;
+}
+#header-help>ul li a{
+  color: #e1e1e1;
+  text-decoration: none;
+}
+#header-help>ul>li>ul>li{
+  border-bottom: 1px solid #e1e1e1;
+}
+#header-help>ul>li>ul>li a{
+  display: block;
+  padding: 5px 15px;
+}
+#header-help>ul>li>ul>li:hover a{
+  background-color: #fff;
+  color: #434343;
 }
 
-a {
-  color: #00B7FF;
+#header-help>ul>li>ul>li:last-child a{
+  border: none;
+  margin-bottom: 0;
 }

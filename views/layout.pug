@@ -2,7 +2,56 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/javascripts/mainJS.js')
+
+    script(src = "https://code.jquery.com/jquery-3.3.1.slim.min.js")
+    script(src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+    script(src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+    link(rel = "stylesheet", href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+
+    link(rel = 'stylesheet', href = '/stylesheets/style.css')
+    script(src = '/javascripts/mainJS.js')
+    
+
   body
+    #header
+      div.container-fluid
+        div.container
+          .row.justify-content-between
+            .col-4
+              #header-help
+                ul
+                  li
+                    a(href = "javasrcipt:void()") USD 
+                      i.fa.fa-caret-down 
+                    ul
+                      li
+                        a(href = "javasrcipt:void()") USD 
+                      li
+                        a(href = "javasrcipt:void()") VND 
+                  li
+                    a(href = "javasrcipt:void()") ENGLISH 
+                      i.fa.fa-caret-down
+                    ul
+                      li
+                        a(href = "javasrcipt:void()") VIETNAMESE 
+                      li
+                        a(href = "javasrcipt:void()") ENGLISH 
+                  li
+                    a(href = "javasrcipt:void()") HELP 
+                      i.fa.fa-caret-down
+                    ul
+                      li
+                        a(href = "javasrcipt:void()") HELP 1
+                      li
+                        a(href = "javasrcipt:void()") HELP 2
+            .col-4
+              #header-login
+
+      div.container-fluid
+        div.container
+
+    div.container-fluid
+      div.container
+
     block content
