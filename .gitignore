@@ -1,2 +1,4 @@
 node_modules
 .vscode
+style.css.map
+style.scss
