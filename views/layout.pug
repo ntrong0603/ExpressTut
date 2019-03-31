@@ -1,10 +1,12 @@
 doctype html
-html(lang = "vi")
+html(lang = "en")
   head
     title= title
 
-    link(rel = "stylesheet", href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
-    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+    link(rel="shortcut icon", type="image/png", href="/images/logo.png")
+   
+    link(rel = "stylesheet", href = "/stylesheets/bootstrap.min.css")
+    link(href="/stylesheets/font-awesome.min.css", rel="stylesheet")
     link(rel = 'stylesheet', href = '/stylesheets/style.css')
 
   body
@@ -13,37 +15,35 @@ html(lang = "vi")
         div.container-fluid(style = "padding: 0;")
           div.container
             .row.justify-content-between
-              .col-5.col-sm-5.col-md-5.col-lg-4.col-xl-4#header-help
-                
-                  ul
-                    li
-                      a(href = "javasrcipt:void()") USD 
-                        i.fa.fa-caret-down 
-                      ul
-                        li
-                          a(href = "javasrcipt:void()") USD 
-                        li
-                          a(href = "javasrcipt:void()") VND 
-                    li
-                      a(href = "javasrcipt:void()") ENG 
-                        i.fa.fa-caret-down
-                      ul
-                        li
-                          a(href = "javasrcipt:void()") VIETNAMESE 
-                        li
-                          a(href = "javasrcipt:void()") ENGLISH 
-              .col-7.col-sm-7.col-md-7.col-lg-4.col-xl-4#header-login
-               
-                  ul
-                    li
-                      i.fa.fa-user 
-                      a(href = "javasrcipt:void()") Login 
-                    li
-                      i.fa.fa-lock 
-                      a(href = "javasrcipt:void()") Register
-                    li
-                      a(href = "javasrcipt:void()") 
-                        i.fa.fa-bars
+              #header-help.col-5.col-sm-5.col-md-5.col-lg-4.col-xl-4
+                ul
+                  li
+                    a(href = "javasrcipt:void()") USD 
+                      i.fa.fa-caret-down 
+                    ul
+                      li
+                        a(href = "javasrcipt:void()") USD 
+                      li
+                        a(href = "javasrcipt:void()") VND 
+                  li
+                    a(href = "javasrcipt:void()") ENG 
+                      i.fa.fa-caret-down
+                    ul
+                      li
+                        a(href = "javasrcipt:void()") VIETNAMESE 
+                      li
+                        a(href = "javasrcipt:void()") ENGLISH 
+              #header-login.col-7.col-sm-7.col-md-7.col-lg-4.col-xl-4
+                ul
+                  li
+                    i.fa.fa-user 
+                    a(href = "javasrcipt:void()") Login 
+                  li
+                    i.fa.fa-lock 
+                    a(href = "javasrcipt:void()") Register
+                  li
+                    a(href = "javasrcipt:void()") 
+                      i.fa.fa-bars
       #header-middle
         div.container-fluid
           div.container
@@ -60,14 +60,35 @@ html(lang = "vi")
                   i.fa.fa-shopping-basket
                   span.count-Cart 0
                   
-    div.container-fluid
+    div.container-fluid.bkg-menu
       div.container
         .row
-          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12
-            
+          .col-9.col-sm-10.col-md-10.col-lg-6.col-xl-6
+
+          .col-3.col-sm-2.col-md-2.col-lg-6.col-xl-6.menu
+            button#open-menu
+              i.fa.fa-bars
+            ul#main-menu
+              li.active
+                a(href="#") Home
+              li
+                a(href="#") Furniture
+              li
+                a(href="#") Chair 
+              li
+                a(href="#") Table
+              li
+                a(href="#") Sofa
+              li
+                a(href="#") Bedroom
+              li
+                a(href="#") Contact
+              li
+                button#close-menu
+                  i.fa.fa-sign-out
     block content
 
-    script(src = "https://code.jquery.com/jquery-3.3.1.slim.min.js")
-    script(src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
-    script(src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+    script(src = "/javascripts/jquery-3.3.1.slim.min.js")
+    script(src = "/javascripts/popper.min.js")
+    script(src = "/javascripts/bootstrap.min.js")
     script(src = '/javascripts/mainJS.js')
