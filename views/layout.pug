@@ -15,42 +15,65 @@ html
 
   body
     #header
-      div.container-fluid
-        div.container
-          .row.justify-content-between
-            .col-4
-              #header-help
-                ul
-                  li
-                    a(href = "javasrcipt:void()") USD 
-                      i.fa.fa-caret-down 
-                    ul
-                      li
-                        a(href = "javasrcipt:void()") USD 
-                      li
-                        a(href = "javasrcipt:void()") VND 
-                  li
-                    a(href = "javasrcipt:void()") ENGLISH 
-                      i.fa.fa-caret-down
-                    ul
-                      li
-                        a(href = "javasrcipt:void()") VIETNAMESE 
-                      li
-                        a(href = "javasrcipt:void()") ENGLISH 
-                  li
-                    a(href = "javasrcipt:void()") HELP 
-                      i.fa.fa-caret-down
-                    ul
-                      li
-                        a(href = "javasrcipt:void()") HELP 1
-                      li
-                        a(href = "javasrcipt:void()") HELP 2
-            .col-4
-              #header-login
-
-      div.container-fluid
-        div.container
-
+      #header-top
+        div.container-fluid
+          div.container
+            .row.justify-content-between
+              .col-4
+                #header-help
+                  ul
+                    li
+                      a(href = "javasrcipt:void()") USD 
+                        i.fa.fa-caret-down 
+                      ul
+                        li
+                          a(href = "javasrcipt:void()") USD 
+                        li
+                          a(href = "javasrcipt:void()") VND 
+                    li
+                      a(href = "javasrcipt:void()") ENGLISH 
+                        i.fa.fa-caret-down
+                      ul
+                        li
+                          a(href = "javasrcipt:void()") VIETNAMESE 
+                        li
+                          a(href = "javasrcipt:void()") ENGLISH 
+                    li
+                      a(href = "javasrcipt:void()") HELP 
+                        i.fa.fa-caret-down
+                      ul
+                        li
+                          a(href = "javasrcipt:void()") HELP 1
+                        li
+                          a(href = "javasrcipt:void()") HELP 2
+              .col-4
+                #header-login
+                  ul
+                    li
+                      i.fa.fa-user 
+                      a(href = "javasrcipt:void()") Login 
+                    li
+                      i.fa.fa-lock 
+                      a(href = "javasrcipt:void()") Register
+                    li
+                      a(href = "javasrcipt:void()") 
+                        i.fa.fa-bars
+      #header-middle
+        div.container-fluid
+          div.container
+            .row
+              .col-3#hotline
+                a(href="javascript:void()") 
+                  i.fa.fa-mobile
+                  ='2300 - 3560 - 222'
+              .col-6
+                a(href="javascript:void()").logo
+                  img(src="/images/logo.png", alt="logo")
+              .col-3#header-cart
+                a(href="javascript:void()")
+                  i.fa.fa-shopping-basket
+                  span.count-Cart 0
+                  
     div.container-fluid
       div.container
 
