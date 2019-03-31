@@ -24,7 +24,7 @@ body {
   padding: 0;
 }
 
-#header-login {
+#header-login > ul {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -198,5 +198,17 @@ body {
   min-width: 28px;
   min-height: 28px;
   background-color: #363636;
+}
+
+@media (max-width: 768px) {
+  #header-help, #header-login {
+    padding: 0 5px;
+  }
+  #header-middle .logo {
+    text-align: left;
+  }
+  #hotline {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,26 +1,20 @@
 doctype html
-html
+html(lang = "vi")
   head
     title= title
 
-    script(src = "https://code.jquery.com/jquery-3.3.1.slim.min.js")
-    script(src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
-    script(src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
     link(rel = "stylesheet", href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
     link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
-
     link(rel = 'stylesheet', href = '/stylesheets/style.css')
-    script(src = '/javascripts/mainJS.js')
-    
 
   body
     #header
       #header-top
-        div.container-fluid
+        div.container-fluid(style = "padding: 0;")
           div.container
             .row.justify-content-between
-              .col-4
-                #header-help
+              .col-5.col-sm-5.col-md-5.col-lg-4.col-xl-4#header-help
+                
                   ul
                     li
                       a(href = "javasrcipt:void()") USD 
@@ -31,23 +25,15 @@ html
                         li
                           a(href = "javasrcipt:void()") VND 
                     li
-                      a(href = "javasrcipt:void()") ENGLISH 
+                      a(href = "javasrcipt:void()") ENG 
                         i.fa.fa-caret-down
                       ul
                         li
                           a(href = "javasrcipt:void()") VIETNAMESE 
                         li
                           a(href = "javasrcipt:void()") ENGLISH 
-                    li
-                      a(href = "javasrcipt:void()") HELP 
-                        i.fa.fa-caret-down
-                      ul
-                        li
-                          a(href = "javasrcipt:void()") HELP 1
-                        li
-                          a(href = "javasrcipt:void()") HELP 2
-              .col-4
-                #header-login
+              .col-7.col-sm-7.col-md-7.col-lg-4.col-xl-4#header-login
+               
                   ul
                     li
                       i.fa.fa-user 
@@ -62,19 +48,26 @@ html
         div.container-fluid
           div.container
             .row
-              .col-3#hotline
+              .col-3.col-sm-3.col-md-4.col-lg-3.col-xl-3#hotline
                 a(href="javascript:void()") 
                   i.fa.fa-mobile
                   ='2300 - 3560 - 222'
-              .col-6
+              .col-9.col-sm-9.col-md-4.col-lg-6.col-xl-6
                 a(href="javascript:void()").logo
                   img(src="/images/logo.png", alt="logo")
-              .col-3#header-cart
+              .col-3.col-sm-3.col-md-4.col-lg-3.col-xl-3#header-cart
                 a(href="javascript:void()")
                   i.fa.fa-shopping-basket
                   span.count-Cart 0
                   
     div.container-fluid
       div.container
-
+        .row
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12
+            
     block content
+
+    script(src = "https://code.jquery.com/jquery-3.3.1.slim.min.js")
+    script(src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+    script(src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+    script(src = '/javascripts/mainJS.js')
