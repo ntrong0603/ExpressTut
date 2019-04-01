@@ -212,6 +212,32 @@ body {
           box-shadow: rgba(1, 2, 2, 0.2) 0px 1px 10px;
 }
 
+.bkg-menu form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #2a2a2a;
+}
+
+.bkg-menu form input[type="text"] {
+  border: none;
+  border-left: 1px solid #2a2a2a;
+  padding: 12px;
+  height: 100%;
+  display: block;
+}
+
+.bkg-menu form button[type="submit"] {
+  border: none;
+  background: none;
+  height: 40px;
+  width: 40px;
+  color: #2a2a2a;
+}
+
 @media (min-width: 1000px) {
   .menu button {
     display: none;
@@ -367,13 +393,18 @@ body {
   font-family: Arial;
 }
 
+@media (max-width: 740px) {
+  .custom-select-not-bootstrap {
+    display: none;
+  }
+  .bkg-menu form input[type="text"] {
+    border: none;
+  }
+}
+
 .custom-select-not-bootstrap select {
   display: none;
   /*hide original SELECT element:*/
-}
-
-.select-selected {
-  background-color: DodgerBlue;
 }
 
 .select-selected::before {
@@ -384,31 +415,38 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f0ca";
+  color: #d58e32;
+  font-size: 22px;
+  margin-right: 16px;
 }
 
 /*style the arrow inside the select element:*/
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 14px;
+  top: 60%;
   right: 10px;
   width: 0;
   height: 0;
+  -webkit-transform: translate(0, -60%);
+          transform: translate(0, -60%);
   border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  border-color: #2a2a2a transparent transparent transparent;
 }
 
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
+  border-color: transparent transparent #2a2a2a transparent;
+  top: 40%;
+  -webkit-transform: translate(0, -40%);
+          transform: translate(0, -40%);
 }
 
 /*style the items (options), including the selected item:*/
 .select-items div,
 .select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
+  color: #2a2a2a;
+  padding: 8px 14px;
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
@@ -416,16 +454,25 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  min-width: 200px;
 }
 
 /*style items (options):*/
 .select-items {
   position: absolute;
-  background-color: DodgerBlue;
   top: 100%;
   left: 0;
   right: 0;
   z-index: 99;
+  border: 1px solid #2a2a2a;
+  background-color: #fff;
 }
 
 /*hide the items when the select box is closed:*/

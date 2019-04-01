@@ -71,7 +71,10 @@ for (i = 0; i < tagSelect.length; i++) {
 function closeAllSelect(elmnt) {
   /*a function that will close all select boxes in the document,
   except the current select box:*/
-  var select_Items, select_Item_Selected, i, arrNo = [];
+  var select_Items,
+    select_Item_Selected,
+    i,
+    arrNo = [];
   select_Items = document.getElementsByClassName("select-items");
   select_Item_Selected = document.getElementsByClassName("select-selected");
   for (i = 0; i < select_Item_Selected.length; i++) {
