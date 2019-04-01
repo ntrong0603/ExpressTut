@@ -4,9 +4,8 @@ html(lang = "en")
     title= title
 
     link(rel="shortcut icon", type="image/png", href="/images/logo.png")
-   
     link(rel = "stylesheet", href = "/stylesheets/bootstrap.min.css")
-    link(href="/stylesheets/font-awesome.min.css", rel="stylesheet")
+    link(rel="stylesheet", href="/stylesheets/font-awesome.min.css")
     link(rel = 'stylesheet', href = '/stylesheets/style.css')
 
   body
@@ -63,8 +62,16 @@ html(lang = "en")
     div.container-fluid.bkg-menu
       div.container
         .row
-          .col-9.col-sm-10.col-md-10.col-lg-6.col-xl-6
-
+          .col-9.col-sm-10.col-md-10.col-lg-6.col-xl-6.d-flex.align-items-center
+            form(action="", method = " GET")
+              i.fa.fa-list-ul
+              select(name="category")
+                option(value="") Select a category
+                option(value="") Chair
+                option(value="") Sofa
+              input(type="text")
+              button(type="submit")
+                i.fa.fa-search
           .col-3.col-sm-2.col-md-2.col-lg-6.col-xl-6.menu
             button#open-menu
               i.fa.fa-bars
