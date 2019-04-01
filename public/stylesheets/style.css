@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font: 14px Arial, "Lucida Grande", Helvetica,  sans-serif;
+  font: 14px Arial, "Lucida Grande", Helvetica, sans-serif;
 }
 
 #header-top {
@@ -14,7 +14,8 @@ body {
   margin: 0;
 }
 
-#header-help > ul, #header-login > ul {
+#header-help > ul,
+#header-login > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,11 +38,13 @@ body {
           align-items: right;
 }
 
-#header-help > ul li, #header-login > ul li {
+#header-help > ul li,
+#header-login > ul li {
   list-style: none;
 }
 
-#header-help > ul > li, #header-login > ul > li {
+#header-help > ul > li,
+#header-login > ul > li {
   position: relative;
   padding: 0 13px;
 }
@@ -50,11 +53,13 @@ body {
   border-left: #e1e1e1 solid 1px;
 }
 
-#header-help > ul > li:first-child, #header-login > ul > li:first-child {
+#header-help > ul > li:first-child,
+#header-login > ul > li:first-child {
   padding-left: 0;
 }
 
-#header-help > ul > li:last-child, #header-login > ul > li:last-child {
+#header-help > ul > li:last-child,
+#header-login > ul > li:last-child {
   padding-right: 0;
 }
 
@@ -78,7 +83,8 @@ body {
   display: block;
 }
 
-#header-help > ul li a, #header-login > ul li a {
+#header-help > ul li a,
+#header-login > ul li a {
   color: #e1e1e1;
   text-decoration: none;
 }
@@ -307,7 +313,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  #header-help, #header-login {
+  #header-help,
+  #header-login {
     padding: 0 5px;
   }
   #header-middle .logo {
@@ -376,7 +383,7 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: '\f0ca';
+  content: "\f0ca";
 }
 
 /*style the arrow inside the select element:*/
@@ -398,7 +405,8 @@ body {
 }
 
 /*style the items (options), including the selected item:*/
-.select-items div, .select-selected {
+.select-items div,
+.select-selected {
   color: #ffffff;
   padding: 8px 16px;
   border: 1px solid transparent;
@@ -425,7 +433,8 @@ body {
   display: none;
 }
 
-.select-items div:hover, .same-as-selected {
+.select-items div:hover,
+.same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=style.css.map */
