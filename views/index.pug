@@ -1,4 +1,38 @@
 extends layout
 
 block content
-    img(src="https://loremflickr.com/360/290/dog", alt="img")
+    div.container
+        .row
+            .col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4#hot-deals
+                div#hot-deals-header
+                    div#title hot deals
+                    div
+                        ul.nav.nav-tabs
+                            li.nav-item
+                                a(data-toggle="tab", href="#home").nav-link.active 
+                            li.nav-item
+                                a(data-toggle="tab", href="#menu1").nav-link 
+                            li.nav-item
+                                a(data-toggle="tab", href="#menu2").nav-link
+                div.tab-content
+                    div.tab-pane.active.container#home 
+                        div
+                            img(src="https://loremflickr.com/360/290/dog", alt="img", width = "100%")
+                        div
+                            div Aenean Ru Bristique
+                            div
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                            div
+                        div
+                    div.tab-pane.container#menu1 
+                        img(src="https://loremflickr.com/360/291/dog", alt="img", width = "100%")
+                    div.tab-pane.container#menu2 
+                        img(src="https://loremflickr.com/360/292/dog", alt="img", width = "100%")
+                
+            .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8
+                img(src="https://loremflickr.com/750/465/dog", alt="img", width = "100%")
+

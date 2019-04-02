@@ -464,6 +464,10 @@ body {
   min-width: 200px;
 }
 
+.select-selected {
+  border: none;
+}
+
 /*style items (options):*/
 .select-items {
   position: absolute;
@@ -483,5 +487,64 @@ body {
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+#hot-deals #hot-deals-header {
+  background-color: #2a2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hot-deals #hot-deals-header #title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+}
+
+#hot-deals #hot-deals-header .nav-tabs {
+  border: none;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+#hot-deals #hot-deals-header .nav-tabs .nav-link {
+  color: #e2e2e2;
+  border: none;
+  padding: .5rem;
+}
+
+#hot-deals #hot-deals-header .nav-tabs .active {
+  color: #d58e32;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
+#hot-deals #hot-deals-header .nav-tabs .nav-link:hover {
+  border: none;
+  border-radius: 0;
+}
+
+#hot-deals #hot-deals-header .nav-tabs .nav-link::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f111";
+}
+
+#hot-deals .container {
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
