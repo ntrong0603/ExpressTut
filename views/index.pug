@@ -34,5 +34,33 @@ block content
                         img(src="https://loremflickr.com/360/292/dog", alt="img", width = "100%")
                 
             .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8
-                img(src="https://loremflickr.com/750/465/dog", alt="img", width = "100%")
+                div(class="slideshow-container", data-autoPlay="2000", data-type="leftRight")
+                    div(class="conten-slider")
+                        div(class="mySlides")
+                            img(src="https://loremflickr.com/750/465/dog?random=1", style="width:100%")
+                            div(class="text") 
+                                span.title indoor furniture
+                                br
+                                span.description save up to 50% of all furniture
+                                a(href = "#") SHOP NOW
+                        div(class="mySlides")
+                            img(src="https://loremflickr.com/750/465/dog?random=2", style="width:100%")
+                            div(class="text") 
+                                span.title indoor furniture
+                                br
+                                span.description save up to 50% of all furniture
+                                a(href = "#") SHOP NOW
+                        div(class="mySlides")
+                            img(src="https://loremflickr.com/750/465/dog?random=3", style="width:100%")
+                            div(class="text") 
+                                span.title indoor furniture
+                                br
+                                span.description save up to 50% of all furniture
+                                a(href = "#") SHOP NOW
+                    div.button-silder
+                        a(class="prev") 
+                            i.fa.fa-chevron-left
+                        a(class="next")
+                            i.fa.fa-chevron-right
+        .row
 
