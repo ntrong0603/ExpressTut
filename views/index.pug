@@ -3,7 +3,7 @@ extends layout
 block content
     div.container
         .row
-            .col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4#hot-deals
+            .col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4#hot-deals
                 div#hot-deals-header
                     div#title hot deals
                     div
@@ -14,32 +14,82 @@ block content
                                 a(data-toggle="tab", href="#menu1").nav-link 
                             li.nav-item
                                 a(data-toggle="tab", href="#menu2").nav-link
-                div.tab-content
-                    div.tab-pane.active.container#home 
-                        div
-                            div add to cart
-                            img(src="https://loremflickr.com/360/290/dog", alt="img", width = "100%")
-                            div
-                                span 25 days
-                                span 10 hrs
-                                span 45 mins
-                                span 30 secs
-                        div
-                            div Aenean Ru Bristique
-                            div
-                                i.fa.fa-star
-                                i.fa.fa-star
-                                i.fa.fa-star
-                                i.fa.fa-star
-                                i.fa.fa-star
-                            div
-                        div
-                    div.tab-pane.container#menu1 
-                        img(src="https://loremflickr.com/360/291/dog", alt="img", width = "100%")
-                    div.tab-pane.container#menu2 
-                        img(src="https://loremflickr.com/360/292/dog", alt="img", width = "100%")
+                .tab-content
+                    .tab-pane.active.container.product#home 
+                        .image-hot
+                            a(href = "", class = "button-cart") add to cart
+                            img(src="https://loremflickr.com/360/290/dog?random=1", alt="img", width = "100%")
+                        .product-content
+                            .product-nam-and-star
+                                .title Aenean Ru Bristique
+                                .star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                            .product-button-and-price
+                                .product-button
+                                    a.eye(href="#")
+                                        i.fa.fa-eye
+                                    a.like(href="#")
+                                        i.fa.fa-heart-o
+                                    a.exchange(href="#")
+                                        i.fa.fa-exchange
+                                .product-price
+                                    span.old-price $350.00
+                                    a.price(href="#") $300.00
+
+                    div.tab-pane.container.product#menu1 
+                        .image-hot
+                            a(href = "", class = "button-cart") add to cart
+                            img(src="https://loremflickr.com/360/290/dog?random=2", alt="img", width = "100%")
+                        .product-content
+                            .product-nam-and-star
+                                .title Aenean Ru Bristique 2
+                                .star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                            .product-button-and-price
+                                .product-button
+                                    a.eye(href="#")
+                                        i.fa.fa-eye
+                                    a.like(href="#")
+                                        i.fa.fa-heart-o
+                                    a.exchange(href="#")
+                                        i.fa.fa-exchange
+                                .product-price
+                                    span.old-price $400.00
+                                    a.price(href="#") $500.00
+                    div.tab-pane.container.product#menu2 
+                        .image-hot
+                            a(href = "", class = "button-cart") add to cart
+                            img(src="https://loremflickr.com/360/290/dog?random=3", alt="img", width = "100%") 
+                        .product-content
+                            .product-nam-and-star
+                                .title Aenean Ru Bristique 3
+                                .star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                            .product-button-and-price
+                                .product-button
+                                    a.eye(href="#")
+                                        i.fa.fa-eye
+                                    a.like(href="#")
+                                        i.fa.fa-heart-o
+                                    a.exchange(href="#")
+                                        i.fa.fa-exchange
+                                .product-price
+                                    span.old-price $400.00
+                                    a.price(href="#") $350.00
                 
-            .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8
+            .col-12.col-sm-12.col-md-12.col-lg-8.col-xl-8
                 div(class="slideshow-container", data-autoPlay="2000", data-type="leftRight")
                     div(class="conten-slider")
                         div(class="mySlides")
@@ -52,21 +102,20 @@ block content
                         div(class="mySlides")
                             img(src="https://loremflickr.com/750/465/dog?random=2", style="width:100%")
                             div(class="text") 
-                                span.title indoor furniture
+                                span.title indoor furniture 2
                                 br
                                 span.description save up to 50% of all furniture
                                 a(href = "#") SHOP NOW
                         div(class="mySlides")
                             img(src="https://loremflickr.com/750/465/dog?random=3", style="width:100%")
                             div(class="text") 
-                                span.title indoor furniture
+                                span.title indoor furniture 3
                                 br
                                 span.description save up to 50% of all furniture
                                 a(href = "#") SHOP NOW
-                    div.button-silder
-                        a(class="prev") 
-                            i.fa.fa-chevron-left
-                        a(class="next")
-                            i.fa.fa-chevron-right
-        .row
+        .row.option
+            .col-6.col-sm-6.col-md-6.col-lg-3.col-xl-4
+            .col-6.col-sm-6.col-md-6.col-lg-3.col-xl-4
+            .col-6.col-sm-6.col-md-6.col-lg-3.col-xl-4
+            .col-6.col-sm-6.col-md-6.col-lg-3.col-xl-4
 
